@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="LAB4.js"></script>
+    <link rel="stylesheet" href="LAB4.css">
+    <link rel="icon" href="">
+    <title>Cake</title>
+</head>
+<body>
+    <br>
+    <div class="wrap">
+    <form id="fieldcake" onsubmit="return false";>
+        <fieldset>
+            <legend>Order Cake!</legend>
+            <h5>Size Of Cake</h5>
+            <input type="radio" value="cake6" name="sizeofcake" onclick="totalprice()">Round Cake 6" - Serves 8 People (RM20) <br>
+            <input type="radio" value="cake8" name="sizeofcake" onclick="totalprice()">Round Cake 8" - Serves 12 People (RM25) <br>
+            <input type="radio" value="cake10" name="sizeofcake" onclick="totalprice()">Round Cake 10" - Serves 16 People (RM35) <br>
+            <input type="radio" value="cake12" name="sizeofcake" onclick="totalprice()">Round Cake 12" - Serves 30 People (RM75) <br>
+            <br>
+            <select name="filling" id="filling" onchange="totalprice()">
+                <option value="none">Select Filling</option>
+                <option value="fill1">ButterCream (Rm7)</option>
+                <option value="fill2">Whipped Cream (Rm5)</option>
+                <option value="fill3">Custard (Rm8)</option>
+                <option value="fill4">Ganache (Rm12)</option>
+            </select>
+            <br><br>
+            Include Candles(RM 5)<input type="checkbox" id="candle" onclick="totalprice()"> <br>
+            Include Inscription(RM 20)<input type="checkbox" id="inscription" onclick="totalprice()"> <br><br>
+            <input type="text" name="descrip" size="25">
+            <br><br>
+            <div id="displaytotalprice"></div>
+        </fieldset>
+    </form>
+    <br>
+    <form id="fieldcake" onsubmit="return false";>
+        <fieldset>
+            <legend>Contact Details!</legend>
+            <br>
+            Name
+            <br>
+            <input type="text" name="descrip" size="25">
+            <br><br>
+            Address
+            <br>
+            <input type="text" name="descrip" size="25">
+            <br><br>
+            Phone Number
+            <br>
+            <input type="text" name="descrip" size="25">
+            <br><br>
+            <div id="displaytotalprice"></div>
+        </fieldset>
+    </form>
+    <br>
+    <button onclick="Submit()" id="submit">Submit</button>
+    <br><br>
+</div>
+</body>
+</html>
