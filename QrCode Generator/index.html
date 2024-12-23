@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+
+    html,body{
+      background-color: #87A2FF ;
+      height: 200px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+    }
+    .card {
+      margin: auto;
+      width: 300px;
+      border: 3px solid white;
+      border-radius: 10px;
+      background-color: antiquewhite;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 10px;
+    }
+    .card img {
+      width: 100%;
+    }
+    .text{
+      text-align: center;
+      font-family: "outfit", sans-serif;
+      font-weight: 400, 700;
+    }
+
+    .card button {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      width: 180px;
+      margin: 0 auto;
+      padding: 3%;
+      background: #0853b6;
+      border: none;
+      border-radius: 17px;
+      font-size: 17px;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="images/image-qr-code.png" alt="Qr Code">
+      <div class="text">
+        <h3>Welcome to Qr Code generator</h3>
+
+        <button><a href="Qr Generator.html" style="text-decoration: none; color: #fff;">Click here</a></button>
+        <p> to generate qrcode to your website</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Lyz</a>.
+    </div>
+  </footer>
+
+</body>
+</html>
