@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #8383BE; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #8383BE , #50A7D9);
+
+}
+
+
+
+.wrap {
+    background-color: white;
+    padding:40px;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.wrap fieldset{
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.wrap legend {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.wrap input {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.wrap select, option{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+label {
+    font-weight: bold;
+    
+    
+}
+
+.wrap button {
+    padding: 12px;
+    background-color: greenyellow;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.wrap button:hover {
+    transition: 1s;
+    background-color: #ffffff;
+}
